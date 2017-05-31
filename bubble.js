@@ -1,20 +1,21 @@
-var r = [10, 2, 3, 9, 7, 6, 8, 1, 5, 4]
+var a = [10, 2, 4, 6, 7, 3, 9 , 1, 5, 8];
 
-function bubbleSort(a) {
-  var swapped;
-  do {
-    swapped = false;
-    for (var i = 0; i < data.length; i++) {
-      if (a[i] > a[i+1]) {
-        var temp = a[i];
-        a[i+1] = temp;
-        swapped = true;
+function bubbleSort(array)
+{
+    var swapped;
+    do {
+        swapped = false;
+        for (var i=0; i < array.length-1; i++) {
+            if (array[i] > array[i+1]) {
+                var temp = a[i];
+                array[i] = array[i+1];
+                array[i+1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+}
 
-      }
-    }
-   console.log(a);
-} while (!swapped);
-
-console.log(data);
-bubbleSort(data);
-console.log(data);
+bubbleSort(a);
+console.log(a);
+2 Comments Collapse
